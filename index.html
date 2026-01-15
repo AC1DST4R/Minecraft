@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #151515);
+            color: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #2a2a2a;
+            padding: 28px 32px;
+            border-radius: 14px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+            max-width: 460px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #7bed9f;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #bdbdbd;
+            margin-bottom: 28px;
+        }
+
+        .card {
+            background: #3a3a3a;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .version {
+            font-size: 1.05em;
+            font-weight: 600;
+        }
+
+        .status {
+            font-size: 0.9em;
+            color: #f2c94c;
+        }
+
+        .ready {
+            color: #7bed9f;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            background: #4caf50;
+            color: #111;
+            padding: 10px 0;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn:hover {
+            background: #66d17a;
+            transform: translateY(-1px);
+        }
+
+        .btn.disabled {
+            background: #555;
+            color: #aaa;
+            pointer-events: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 0.85em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minecraft</h1>
+        <div class="subtitle">Play Minecraft from version 1.5.2 - 1.12.2 in your web browser</div>
+
+        <!-- Minecraft 1.5.2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="version">Minecraft 1.5.2</div>
+                <div class="status ready">Available</div>
+            </div>
+            <!-- Replace the href link below -->
+            <a class="btn" href="https://ac1dst4r.github.io/Minecraft/Version%201.5.2">
+                Play Version 1.5.2
+            </a>
+        </div>
+
+        <!-- Minecraft 1.8 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="version">Minecraft 1.8</div>
+                <div class="status ready">Available</div>
+            </div>
+            <!-- Replace the href link below -->
+            <a class="btn" href="https://ac1dst4r.github.io/Minecraft/Version%201.8">
+                Play Version 1.8
+            </a>
+        </div>
+
+        <!-- Minecraft 1.12.2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="version">Minecraft 1.12.2</div>
+                <div class="status">Port in Development</div>
+            </div>
+            <!-- Replace the href link below when ready -->
+            <a class="btn disabled" href="#">
+                Coming Soon
+            </a>
+        </div>
+
+        <footer>
+            Minecraft Ported by AC1DST4R to Github. All Rights Reserved to Mojang.
+        </footer>
+    </div>
+</body>
+</html>
